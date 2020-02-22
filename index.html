@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Exercise</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="flexCenterCenter">jQuery øvelser</h1>
+
+    <!--
+        Tip!
+        2.2 Brug css() funktionen
+        2.3 brug alert() funktionen
+        2.4 brug .val() til at hente værdien i value attributen
+    -->
+
+    <div class="border pad20">
+        <h2>Øvelse 1</h2>
+
+        <p>1. Gør så baggrundsfarven på den omkringliggende kasse ændre sig når man trykker på denne knap --> <button id="changeColorBtn">Knap</button></p>
+        <p>2. Gør så der kommer en alert box når man trykker på denne knap --> <button id="alertBtn">Alert</button></p>
+        <p>3. Gør så denne alert box skriver det samme som der står i dette input felt --> <input id="alertText" type="text" aria-label="alertText"></p>
+
+    </div>
+
+    <hr>
+
+    <!--
+        Tip!
+        Brug .val() til at hente værdierne
+        Brug parseInt() til at gøre værdierne til tal.
+    -->
+    <div class="pad20">
+        <h2>Øvelse 2</h2>
+        <p>Når man trykker på = skal resultatet af hhv. plus og minus komme frem i stedet for ?'et</p>
+
+        <div class="pad20">
+            <input id="addNumber1" type="number" aria-label="addNumber1"> + <input id="addNumber2" type="number" aria-label="addNumber2"> <button id="addBtn">=</button> <span id="addResult">?</span>
+        </div>
+        <div class="pad20">
+            <input id="subNumber1" type="number" aria-label="subNumber1"> - <input id="subNumber2" type="number" aria-label="subNumber2"> <button id="subBtn">=</button> <span id="subResult">?</span>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!--
+        Tip!
+        Brug fadeOut() og console.log() funktionerne
+    -->
+
+    <div class="pad20">
+        <h2>Øvelse 3</h2>
+        <p>Når man klikker på en grøn kasse skal fade ud og tallet fra kassen skal udskrives i konsollen</p>
+
+        <div class="flex justify-content-space-around">
+            <div class="flexCenterCenter bg-green box">1</div>
+            <div class="flexCenterCenter bg-green box">2</div>
+            <div class="flexCenterCenter bg-green box">3</div>
+            <div class="flexCenterCenter bg-green box">4</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--
+        Tip!
+        Brug: .change(), .width() og .text
+    -->
+
+    <div class="pad20">
+        <h2>Øvelse 4</h2>
+        <p>Slideren herunder kan angive værdier fra 0-100</p>
+        <p>1. Når man rykker på slideren skal kassens bredde ændre sig til at have den samme værdi (i %) som slideren angiver</p>
+        <p>2. Gør så der inden i kassen står hvor bred den er i %</p>
+
+        <label for="inputWidth">Slider </label><input type="range" min="0" max="100" step="1" id="inputWidth"> %
+        <br><br>
+        <div class="flexCenterCenter bg-green w-50 h-50">
+            <!--Jeg er den grønne kasse-->
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!--
+        Tip!
+        Brug: .click(), .css() og .text
+    -->
+
+    <div class="pad20">
+        <h2>Øvelse 5</h2>
+        <p>1 Gør så man kan vælge en baggrundsfarve til kassen nede under</p>
+        <p>2 Gør så farvekoden står i kassen når den er valgt</p>
+
+
+        <label for="colorPicker">Vælg en farve:</label>
+        <input type="color" name="bgcolor" value="#FFFFFF" id="colorPicker">
+        <br><br>
+        <div class="flexCenterCenter border h-50">
+            Color me!
+        </div>
+
+    </div>
+    <hr>
+
+
+    <div class="pad20">
+        <h2>Øvelse 6</h2>
+        <p>Her skal du lave et lille terningespil der handler om at slå 2 ens.</p>
+        <p>Når man klikker på "Rul" knappen skal der genereres 2 tilfældige tal mellem 1-6.</p>
+        <p>Tallene skal derefter vises på terningerne.</p>
+        <p>Hvis man slå 2 ens skal brugeren have en besked om at han/hun har vundet spillet.</p>
+
+        <div class="flexCenterCenter pad20 bg-green">
+            <div class="dice flexCenterCenter mar20">1</div>
+            <div class="dice flexCenterCenter mar20">2</div>
+        </div>
+        <br><br>
+        <div class="flexCenterCenter">
+            <button class="pad20 w-25">Rul</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        //Code goes her
+    });
+</script>
+</body>
+</html>
